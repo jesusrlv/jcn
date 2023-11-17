@@ -24,7 +24,14 @@
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
-
+<style>
+	@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+	#imagenResp{
+		background-position: right center;
+	}
+}
+</style>
 <body class=" animsition">
 	<!--Header-->
 	<header class="vlt-header vlt-header--default">
@@ -165,7 +172,7 @@
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
 						<!--Ken Burn Effect-->
-						<div class="vlt-section__ken-burn-background"><img src="img/2.jpg" style=" filter: grayscale(0%);" alt=""></div>
+						<div class="vlt-section__ken-burn-background" id="imagenResp" ><img src="img/2.jpg" style=" filter: grayscale(0%);" alt=""></div>
 						<div class="container">
 							<div class="row">
 								<div class="col-xl-6" style="background-color: rgba(0, 0, 0, 0.3); padding: 10px; border-radius: 3px;">
@@ -228,7 +235,7 @@
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
 						<!--Ken Burn Effect-->
-						<div class="vlt-section__ken-burn-background"><img src="img/calendario_jcn2023.jpg" style=" filter: grayscale(0%);" alt=""></div>
+						<div class="vlt-section__ken-burn-background"><img src="img/calendario_new.jpg" style=" filter: grayscale(0%);" alt=""></div>
 						<div class="container">
 							<div class="row">
 								<div class="col-xl-6" style="background-color: rgba(0, 0, 0, 0.3); padding: 10px; border-radius: 3px;">
@@ -256,7 +263,7 @@
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
 						<!--Ken Burn Effect-->
-						<div class="vlt-section__ken-burn-background"><img src="img/fondo_cosasbuenas.jpg" style=" filter: grayscale(0%);" alt=""></div>
+						<div class="vlt-section__ken-burn-background"><img src="img/97.jpg" style=" filter: grayscale(0%);" alt=""></div>
 						<div class="container">
 							<div class="row">
 								<div class="col-xl-6" style="background-color: rgba(0, 0, 0, 0.3); padding: 10px; border-radius: 3px;">
@@ -293,11 +300,17 @@
 								<div class="col-xl-12" style="background-color: rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 3px;">
 									<!--Animated Block-->
 									<div class="vlt-animated-block" data-animation-name="fadeInUpSm" style="animation-delay:0s; animation-duration:700ms;">
-										<h3>Blogs-aliados</h3>
-										<h4>Cursos permanentes de Activación física, Mental y Emocional</h4>
+										<h3 class="text-center">Aliados</h3>
+										<!-- <h4 class="text-center">Cursos permanentes de Activación física, Mental y Emocional</h4> -->
 										<!-- <div class="vlt-gap-30"></div> -->
-										<p class="h4">Se parte de nuestros aliados </p>
-										<p class="h2 text-center"><a href="https://cosasbuenaszacatecas.com/se-parte-de-nuestros-aliados/" target="_blank">Cosas Buenas Zacatecas</a></p>
+										<p class="h4 text-center">Se parte de nuestros aliados 
+											<br>
+											<a href="https://cosasbuenaszacatecas.com/se-parte-de-nuestros-aliados/" target="_blank">
+
+												<img src="img/cosas_buenas.PNG" alt="" width="500"/>
+											</a>
+										</p>
+										
 										<div class="vlt-gap-40"></div>
 										
 									</div>
