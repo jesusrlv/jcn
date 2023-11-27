@@ -11,7 +11,7 @@ if (isset($_POST['usr']) && isset($_POST['pwd'])) {
     if($fila == 1){
             echo json_encode(array('success' => 1));
     } 
-    else if($fila == 0){
+    else{
             echo json_encode(array('success' => 0));
         }
 

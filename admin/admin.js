@@ -11,11 +11,10 @@ $(document).ready(function() {
             {
                 var jsonData = JSON.parse(JSON.stringify(response));
                 var success = jsonData.success;
- 
+                console.log(success);
                 // user is logged in successfully in the back-end
                 // let's redirect
-                if (success = 1)
-                {
+                if (success = 1){
                     // location.href = 'my_profile.php';
                     Swal.fire({
                         icon: 'success',
@@ -24,8 +23,7 @@ $(document).ready(function() {
                         footer: 'UACYA UAZ'
                     }).then(function(){window.location='dashboard.html';});
                 }
-                else if (success = 0)
-                {
+                else {
                     // alert('Invalid Credentials!');
                     Swal.fire({
                         icon: 'error',
