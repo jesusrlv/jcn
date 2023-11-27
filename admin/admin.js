@@ -5,7 +5,7 @@ $(document).ready(function() {
         e.preventDefault();
         $.ajax({
             type: "POST",
-            url: 'prcd/login.php',
+            url: 'acceso.php',
             data: $(this).serialize(),
             success: function(response)
             {
@@ -24,7 +24,7 @@ $(document).ready(function() {
                         footer: 'UACYA UAZ'
                     }).then(function(){window.location='dashboard.html';});
                 }
-                else
+                else if (success = 0)
                 {
                     // alert('Invalid Credentials!');
                     Swal.fire({
