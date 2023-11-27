@@ -1,9 +1,8 @@
 <?php
-
 // server prueba
     $servername="localhost";
-    $database=""; //solo se quitó para conexión remota
-    $username="";
+    $database="jcn"; //solo se quitó para conexión remota
+    $username="root";
     $password="";
 
     $conn= new mysqli ($servername,$username,$password,$database); //solo se quitó para conexión remota
