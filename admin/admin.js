@@ -6,15 +6,16 @@ $(document).ready(function() {
         $.ajax({
             type: "POST",
             url: 'acceso.php',
+            dataType:'json',
             data: $(this).serialize(),
             success: function(response)
             {
                 var jsonData = JSON.parse(JSON.stringify(response));
                 var success = jsonData.success;
-                console.log(success);
                 // user is logged in successfully in the back-end
                 // let's redirect
-                if (success = 1){
+                console.log(success);
+                if (success == 1){
                     // location.href = 'my_profile.php';
                     Swal.fire({
                         icon: 'success',
