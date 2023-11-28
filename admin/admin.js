@@ -1,5 +1,4 @@
 // LOGIN
-
 $(document).ready(function() {
     $('#pwdForm').submit(function(e) {
         e.preventDefault();
@@ -38,3 +37,18 @@ $(document).ready(function() {
        });
      });
 });
+
+// tabla de secciones
+
+function tablaSecciones(){
+    $.ajax({
+        type: "POST",
+        url: 'secciones.php',
+        dataType:'html',
+        success: function(response)
+        {
+            $('#secciones').html(data);
+        }
+    });
+    
+}
