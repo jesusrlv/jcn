@@ -47,7 +47,7 @@ function tablaSecciones(){
         dataType:'html',
         success: function(response)
         {
-            $('#secciones').html(data);
+            $('#secciones').html(response);
         }
     });
     

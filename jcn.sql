@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 27-11-2023 a las 23:29:40
+-- Tiempo de generación: 28-11-2023 a las 23:29:35
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 7.4.28
 
@@ -20,6 +20,27 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `jcn`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `secciones`
+--
+
+CREATE TABLE `secciones` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `titulo` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `subtitulo` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `imagen` varchar(100) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `secciones`
+--
+
+INSERT INTO `secciones` (`id`, `nombre`, `titulo`, `subtitulo`, `imagen`) VALUES
+(1, 'Seccion1', 'Sección 1', 'Sección de eventos', 'IMG');
 
 -- --------------------------------------------------------
 
@@ -45,6 +66,12 @@ INSERT INTO `usr` (`id`, `usr`, `pwd`) VALUES
 --
 
 --
+-- Indices de la tabla `secciones`
+--
+ALTER TABLE `secciones`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `usr`
 --
 ALTER TABLE `usr`
@@ -53,6 +80,12 @@ ALTER TABLE `usr`
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `secciones`
+--
+ALTER TABLE `secciones`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `usr`

@@ -19,6 +19,8 @@
 
 <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
+<script src="admin.js"></script>
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -145,13 +147,33 @@
                     <label for="exampleFormControlInput1" class="form-label"><i class="bi bi-youtube"></i> Link video</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Link video">
                 </div>
-                <h3>Secciones</h3>
-                <button class="btn btn-primary">
-                    <i class="bi bi-plus-circle"></i> Agregar sección
-                </button>
-                <div id="secciones">
-
+                <div class="row mt-5">
+                    <div class="col-6">
+                        <h3>Secciones</h3>
+                    </div>
+                    <div class="col-6 text-end">
+                        <button class="btn btn-primary">
+                            <i class="bi bi-plus-circle"></i> Agregar sección
+                        </button>
+                    </div>
                 </div>
+                <div class="container">
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <td>Sección</td>
+                                <td>Título</td>
+                                <td>Subtítulo</td>
+                                <td>Imagen</td>
+                                <td>Contenido</td>
+                            </tr>
+                        </thead>
+                        <tbody id="secciones">
+
+                        </tbody>
+                    </table>
+                </div>
+                
                 <h3>Pie de página</h3>
 
             </div>
