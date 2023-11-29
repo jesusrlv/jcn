@@ -20,7 +20,7 @@ $(document).ready(function() {
                         icon: 'success',
                         title: 'Usuario Admin',
                         text: 'Credenciales correctas',
-                        footer: 'UACYA UAZ'
+                        footer: 'JCN'
                     }).then(function(){window.location='dashboard.html';});
                 }
                 else {
@@ -29,7 +29,7 @@ $(document).ready(function() {
                         icon: 'error',
                         title: 'Datos incorrectos',
                         text: 'Credenciales incorrectas',
-                        footer: 'UACYA UAZ'
+                        footer: 'JCN'
                     }).then(function(){window.location='index.html';});
                     // });
                 }

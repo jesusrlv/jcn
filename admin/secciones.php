@@ -10,6 +10,7 @@
             <td>'.$rowSQL['titulo'].'</td>
             <td>'.$rowSQL['subtitulo'].'</td>
             <td>'.$rowSQL['imagen'].'</td>
+            <td><i class="bi bi-pencil-square"></i> | <i class="bi bi-trash"></i></td>
         </tr>
         ';
     }
